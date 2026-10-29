@@ -325,10 +325,8 @@ I will now list the steps required to get an AJX example script running!
 You should also install AJX as a Python package by navigating to the project root of the AJX repository, which you just cloned to your folder, and running the following command:
 
 ```bash
-pip install -e .
+python -m pip install -e .
 ```
-
-However, this will not include the **scenes**, **notebooks**, or **tests** directories, so you cannot run the cartpole script shown above with this alone.
 
 By downloading it as a package, you will be able to import modules from AJX to different programs anywhere in your venv.
 
