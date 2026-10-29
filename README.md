@@ -92,7 +92,7 @@ If `py --version` works but `python --version` does not, Python is installed, bu
 
 In order to install Python for MacOS, follow these steps:
 
-- Download desired Python version (**TODO: Which version should I recommend? 3.12?**) from [Python Downloads for macOS](https://www.python.org/downloads/macos/).
+- Download desired Python version (**Vilken version borde jag rekommendera? 3.12?**) from [Python Downloads for macOS](https://www.python.org/downloads/macos/).
 - If you already have it, you can use Homebrew: `brew install python`.
 
 Check if it's installed by running the following in the Terminal:
@@ -350,7 +350,7 @@ To get AGX installed, follow these steps:
 2. Visit the [AGX Installation Guide](https://www.algoryx.se/documentation/complete/agx/tags/agx-2.34.0.0/UserManual/source/installation.html) and follow the steps for your OS to finish the installation. Make sure to do the following:
    - Check the box **Install python libraries?**
    - Uncheck the box **Run the license authorization program?**
-3. Place the license file found on Canvas (**TODO: Insert link**) in the installation folder, i.e. the folder called `AGX-2.xx` (where `xx` is your installed version).
+3. Place the license file found on Canvas (**Lägg till länk**) in the installation folder, i.e. the folder called `AGX-2.xx` (where `xx` is your installed version).
 
 AGX should now be installed!
 
@@ -392,7 +392,7 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 
 1. Create a folder for your own AGX Python scripts anywhere on your computer.
 2. Visit [AGX Python tutorials](https://www.algoryx.se/documentation/complete/agx/tags/latest/doc/main/python_tutorials.html), copy the source code for the Basic simulation tutorial, create a Python file named `basic_sim.py`, and paste the source code into it.
-3. Comment out line 19, `from tutorial_utils import createHelpText`, and line 23, `createHelpText(sim, app)` (`tutorial_utils` is not defined in the AGX download). **TODO: Is there a better AGX example to start from?**
+3. Comment out line 19, `from tutorial_utils import createHelpText`, and line 23, `createHelpText(sim, app)` (`tutorial_utils` is not defined in the AGX download). **Finns det ett bättre exempel att utgå ifrån?**
 4. Make sure the AGX environment is set up in your terminal/command prompt before trying to start the simulation. See [Running an AGX tutorial](#running-an-agx-tutorial) to learn how to do this.  
 5. Start the simulation:
 
@@ -406,8 +406,13 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 ---
 
 ## Troubleshooting and FAQ
+**Min idé med denna sektion är att den kan fyllas i kontinuerligt under kursens gång! Så varje gång ett problem uppstår och en lösning hittats så dokumenterar man det här!**
+- If you run into unexpected errors (such as errors in code that you have been provided with by supervisors) when running a script/notebook using AJX modules, it might be an issue with your current version of AJX. Perform a `git pull` in the AJX repository to get the latest version. If that alone does not work, reinstall AJX as a package by running `pip install -e .` in the project root. 
+- Students last year experienced issues with the package panda3d when trying to use AJX in WSL. The problem was that an empty Panda window opened and was then closed after a couple of seconds following a segmentation fault. This issue was resolved by running the code on Windows.
+- If you experience licensing errors when trying to use AGX, it is likely due to the license file not being placed in the correct location. Read [AGX installation](#agx-installation) for instructions about where to place the license file.
+- Last year a student experienced persistent licensing errors when trying to run AGX simulations, even though he had placed the license file in the correct location. He found that the licensing error was resolved when he ran the simulations using AGXViewer, instead of simply using Python or C++.
+- If you experience issues with setting up the AGX environment in Windows, make sure that you are not calling the `setup_env.bat` file from a Powershell terminal. Instead, call the setup file in a Command Prompt terminal or just run the simulation from the AGX Dynamics Command Line, which sets up the environment automatically. 
 
-
-This is it for this manual. Don't hesitate to contact the course supervisors if you are experiencing problems with any of the steps! They are very helpful and usually respond very fast!
+That is it for this manual. Don't hesitate to contact the course supervisors if you are experiencing problems with any of the steps! They are very helpful and usually respond very fast!
 
 I wish you all the best of luck with future coursework! 
