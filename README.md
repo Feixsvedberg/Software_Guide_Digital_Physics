@@ -37,7 +37,7 @@
 
 ## Background
 
-In the course Digital Physics, you will mainly be working with software tools: **AGX**, a software development kit for modeling and simulation of mechanical systems with contacts and friction, and **AJX**, a minimal multi-body dynamics simulator written in Python.
+In the course Digital Physics, you will mainly be working with two software tools: **AGX**, a software development kit for modeling and simulation of mechanical systems with contacts and friction, and **AJX**, a minimal multi-body dynamics simulator written in Python.
 
 Most students of Teknisk Fysik at Umeå University are familiar with C and Matlab, but not everyone has experience with Python. This manual therefore covers the Python basics you need for the course. It also introduces Git and GitHub and explains how to get started with AJX and AGX.
 
