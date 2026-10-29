@@ -406,7 +406,7 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 ---
 
 ## Troubleshooting and FAQ
-**Min idé med denna sektion är att den kan fyllas i kontinuerligt under kursens gång! Så varje gång ett problem uppstår och en lösning hittats så dokumenterar man det här!**
+**Min idé med denna sektion är att den kan fyllas i kontinuerligt under kursens gång! Så varje gång ett problem uppstår och en lösning hittats så dokumenterar man det här så studenter har ett ställe att börja leta på ifall de stöter på problem!**
 - If you run into unexpected errors (such as errors in code that you have been provided with by supervisors) when running a script/notebook using AJX modules, it might be an issue with your current version of AJX. Perform a `git pull` in the AJX repository to get the latest version. If that alone does not work, reinstall AJX as a package by running `pip install -e .` in the project root. 
 - Students last year experienced issues with the package panda3d when trying to use AJX in WSL. The problem was that an empty Panda window opened and was then closed after a couple of seconds following a segmentation fault. This issue was resolved by running the code on Windows.
 - If you experience licensing errors when trying to use AGX, it is likely due to the license file not being placed in the correct location. Read [AGX installation](#agx-installation) for instructions about where to place the license file.
