@@ -389,7 +389,7 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 
 ---
 
-## Troubleshooting and FAQ's
+## Troubleshooting and FAQ
 
 
 This is it for this manual. Don't hesitate to contact the course supervisors if you are experiencing problems with any of the steps! They are very helpful and usually respond very fast!
