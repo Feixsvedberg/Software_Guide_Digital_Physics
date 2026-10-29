@@ -370,9 +370,11 @@ I will now go through the steps to get an AGX simulation running. First, we need
   source setup_env.bash
   ```
 
-to set up the environment.
+to set up the environment. Remember what you have learned about activating venvs before running Python programs; this is similar! It is however, not exactly the same. `setup_env.bat` configures environment variables and Python interpreter. For example, it sets paths that allow Python to find packages included with the AGX installation.
 
-Once done, you can run the following command:
+By default, AGX uses its bundled Python interpreter, which comes with packages already installed. However, you can tell AGX to use an external Python installation. This is controlled by the AGX_USE_EXTERNAL_PYTHON variable or by using the argument /USEEXTERNALPYTHON when calling `setup_env.bat`.
+
+Once you are done with setting up the environment, you can run the following command:
 
 ```bash
 agxViewer cables.agxPy
@@ -391,7 +393,7 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 1. Create a folder for your own AGX Python scripts anywhere on your computer.
 2. Visit [AGX Python tutorials](https://www.algoryx.se/documentation/complete/agx/tags/latest/doc/main/python_tutorials.html), copy the source code for the Basic simulation tutorial, create a Python file named `basic_sim.py`, and paste the source code into it.
 3. Comment out line 19, `from tutorial_utils import createHelpText`, and line 23, `createHelpText(sim, app)` (`tutorial_utils` is not defined in the AGX download). **TODO: Is there a better AGX example to start from?**
-4. Make sure the AGX environment is set up in your terminal/command prompt before trying to start the simulation. See [Running an AGX tutorial](#running-an-agx-tutorial) to learn how to do this. Remember what you have learned about activating venvs before running Python programs; this is essentially the same thing! **TODO: Is this comparison misleading?**
+4. Make sure the AGX environment is set up in your terminal/command prompt before trying to start the simulation. See [Running an AGX tutorial](#running-an-agx-tutorial) to learn how to do this.  
 5. Start the simulation:
 
    ```bash
