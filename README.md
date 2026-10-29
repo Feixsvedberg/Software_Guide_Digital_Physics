@@ -411,7 +411,7 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 - Students last year experienced issues with the package panda3d when trying to use AJX in WSL. The problem was that an empty Panda window opened and was then closed after a couple of seconds following a segmentation fault. This issue was resolved by running the code on Windows.
 - If you experience licensing errors when trying to use AGX, it is likely due to the license file not being placed in the correct location. Read [AGX installation](#agx-installation) for instructions about where to place the license file.
 - Last year a student experienced persistent licensing errors when trying to run AGX simulations, even though he had placed the license file in the correct location. He found that the licensing error was resolved when he ran the simulations using AGXViewer, instead of simply using Python or C++.
-- If you experience issues with setting up the AGX environment in Windows, make sure that you are not calling the `setup_env.bat` file from a Powershell terminal. Instead, call the setup file in a Command Prompt terminal or just run the simulation from the AGX Dynamics Command Line, which sets up the environment automatically. 
+- If you experience issues with setting up the AGX environment on Windows, make sure that you are not calling the `setup_env.bat` file from a Powershell terminal. Instead, call the setup file in a Command Prompt terminal or just run the simulation from the AGX Dynamics Command Line, which sets up the environment automatically. 
 
 That is it for this manual. Don't hesitate to contact the course supervisors if you are experiencing problems with any of the steps! They are very helpful and usually respond very fast!
 
