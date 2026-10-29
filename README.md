@@ -292,7 +292,7 @@ When accessing the link, you will enter GitHub's GUI. The first thing you see is
 
 ### Running an AJX script
 
-> **Note:** The instructions in this subsection are only for running example scripts. You will also be required to install AJX for future coursework. How to install it is detailed in [AJX as a package](#ajx-as-a-package).
+> **Note:** The instructions in this subsection are only for running example scripts. You will also be required to install AJX as Python package for future coursework. How to install it is detailed in [AJX as a package](#ajx-as-a-package).
 
 I will now list the steps required to get an AJX example script running!
 
