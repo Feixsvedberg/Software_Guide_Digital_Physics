@@ -32,6 +32,7 @@
   - [AGX installation](#agx-installation)
   - [Running an AGX tutorial](#running-an-agx-tutorial)
   - [Running your own AGX Python script](#running-your-own-agx-python-script)
+-[Troubleshooting and FAQ](#troubleshooting-and-FAQ)
 
 ---
 
@@ -388,6 +389,9 @@ We are now going to write our own AGX simulation by modifying an existing exampl
 
 ---
 
+## Troubleshooting and FAQ's
+
+
 This is it for this manual. Don't hesitate to contact the course supervisors if you are experiencing problems with any of the steps! They are very helpful and usually respond very fast!
 
-I wish you all the best of luck with future coursework!
+I wish you all the best of luck with future coursework! 
