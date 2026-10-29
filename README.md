@@ -32,7 +32,7 @@
   - [AGX installation](#agx-installation)
   - [Running an AGX tutorial](#running-an-agx-tutorial)
   - [Running your own AGX Python script](#running-your-own-agx-python-script)
--[Troubleshooting and FAQ](#troubleshooting-and-FAQ)
+- [Troubleshooting and FAQ](#troubleshooting-and-FAQ)
 
 ---
 
