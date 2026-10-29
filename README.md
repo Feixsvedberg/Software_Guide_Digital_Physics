@@ -254,6 +254,8 @@ How to write Python code will not be covered in this manual, but I once again st
 
 There is a more efficient alternative to venv called `uv`. It is a fast Python project and package manager that combines functionality from several tools, including Python version management, venv for creating virtual environments, and pip for installing packages. Using uv is optional, but those who are interested can find a complete guide for uv here: [uv - Complete Guide](https://pydevtools.com/handbook/explanation/uv-complete-guide/).
 
+Another big advantage of using uv instead of venv is that uv maintains a shared cache (storage where data is saved for reuse) of Python packages. When multiple project environments need the same package, uv can reuse cached files instead of installing the package again. Depending on the operating system and filesystem, it can also reduce disk usage by avoiding duplicate copies of package files. This can save both time and disk space!
+
 ## Git
 
 Git is a free and open-source version control system (VCS). It is by far the most widely used VCS globally, and I can almost guarantee that being familiar with Git is going to be very useful in your career as an engineer!
