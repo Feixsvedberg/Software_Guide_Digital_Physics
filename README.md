@@ -217,6 +217,16 @@ A common scenario is wanting to use a project written by someone else with a bun
 ```bash
 python -m pip install -r "requirements.txt"
 ```
+It is worth mentioning that when using pip, the command
+
+```bash
+pip install
+```
+instead of 
+```bash
+python -m pip install
+```
+is often sufficient. It is however, safer to use the latter alternative since it helps ensure that packages are installed using the intended Python interpreter. This is especially useful when multiple Python versions or virtual environments are present.
 
 ### Notebooks
 
@@ -295,10 +305,14 @@ I will now list the steps required to get an AJX example script running!
    ```bash
    git clone https://github.com/Hman05/AJX
    ```
+   or if you are using SSH (recommended):
+   ```bash
+   git clone git@github.com:Hman05/AJX.git
+   ```
 
    If this was successful, you should now see a repository called `AJX` inside your folder. If you are unsure what any of this means or if you do not have Git installed, visit the [Git](#git) section.
-6. Navigate to the project root (the "highest level" of the repository).
-7. Run the following command:
+7. Navigate to the project root (the "highest level" of the repository).
+8. Run the following command:
 
    ```bash
    python -m scenes.cartpole
@@ -308,10 +322,10 @@ I will now list the steps required to get an AJX example script running!
 
 ### AJX as a package
 
-You should also install AJX as a Python package by running the command:
+You should also install AJX as a Python package by navigating to the project root of the AJX repository, which you just cloned to your folder, and running the following command:
 
 ```bash
-python -m pip install git+ssh://git@github.com/hman05/ajx.git
+pip install -e .
 ```
 
 However, this will not include the **scenes**, **notebooks**, or **tests** directories, so you cannot run the cartpole script shown above with this alone.
